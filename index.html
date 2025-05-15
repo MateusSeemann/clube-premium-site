@@ -3,169 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clube Premium</title>
+  <title>Clube Premium - Loja de Produtos</title>
   <style>
     body {
       margin: 0;
-      font-family: sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
       color: #333;
-      line-height: 1.6;
     }
     header {
-      background: #111;
+      background: linear-gradient(90deg, #111, #444);
       color: white;
       padding: 2rem;
       text-align: center;
+      animation: fadeIn 1s ease-in;
     }
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
       padding: 2rem;
+      animation: fadeUp 1s ease-in;
     }
     h1, h2 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    .planos {
+    .produtos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
       margin: 2rem 0;
     }
-    .plano {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1.5rem;
+    .produto {
       background: white;
-      transition: transform 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .plano:hover {
+    .produto:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
     }
-    .plano h3 {
-      margin-top: 0;
+    .produto img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 1rem;
     }
-    .plano a {
+    .produto a {
       display: inline-block;
       margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1rem;
       background-color: #111;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s ease;
     }
-    .plano a:hover {
+    .produto a:hover {
       background-color: #333;
-    }
-    .depoimentos, .faq, .contato {
-      margin-top: 3rem;
-    }
-    .depoimento {
-      background: white;
-      border-left: 4px solid #111;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-    .faq-item {
-      margin-bottom: 1rem;
     }
     footer {
       text-align: center;
       padding: 1rem;
-      background: #f1f1f1;
+      background: #222;
+      color: #ccc;
       font-size: 0.9rem;
     }
-    input, textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    button {
-      background-color: #111;
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      margin-top: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #333;
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Clube Premium</h1>
-    <p>Assinatura mensal com acesso exclusivo a conteúdos, vantagens e suporte personalizado.</p>
+    <p>Produtos exclusivos, selecionados para você</p>
   </header>
 
   <div class="container">
-    <h2>Escolha seu plano</h2>
-    <div class="planos">
-      <div class="plano">
-        <h3>Plano 1 - Assinatura Básica</h3>
-        <p>Acesso ao conteúdo essencial.</p>
-        <a href="https://pay.kirvano.com/12e5cb1a-c3ac-4117-ad77-3c9b4ad54924?aff=af15fba7-85de-4441-880d-a42de29fe943" target="_blank">Assinar</a>
+    <h2>Confira nossos produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Descrição breve do produto 1 com seus principais benefícios.</p>
+        <a href="#">Comprar</a>
       </div>
-      <div class="plano">
-        <h3>Plano 2 - Assinatura Mensal</h3>
-        <p>Conteúdo completo mês a mês.</p>
-        <a href="https://pay.kirvano.com/0052bd70-a705-4c47-9c54-44167c70bc7f?aff=af15fba7-85de-4441-880d-a42de29fe943" target="_blank">Assinar</a>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Produto ideal para quem busca qualidade e preço justo.</p>
+        <a href="#">Comprar</a>
       </div>
-      <div class="plano">
-        <h3>Plano 3 - Trimestral</h3>
-        <p>Economia e acesso contínuo por 3 meses.</p>
-        <a href="https://pay.kirvano.com/e697d1e7-1c2d-432d-bd2e-6cc8786fbd9b?aff=af15fba7-85de-4441-880d-a42de29fe943" target="_blank">Assinar</a>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Leve agora e transforme sua experiência.</p>
+        <a href="#">Comprar</a>
       </div>
-      <div class="plano">
-        <h3>Plano 4 - Anual</h3>
-        <p>O melhor custo-benefício. Acesso por 12 meses.</p>
-        <a href="https://pay.kirvano.com/a8742772-2ece-4227-bb9c-8dacc9ac87ed?aff=af15fba7-85de-4441-880d-a42de29fe943" target="_blank">Assinar</a>
+      <div class="produto">
+        <img src="https://via.placeholder.com/300x200" alt="Produto 4">
+        <h3>Produto 4</h3>
+        <p>Produto exclusivo disponível por tempo limitado.</p>
+        <a href="#">Comprar</a>
       </div>
-    </div>
-
-    <div class="depoimentos">
-      <h2>Depoimentos</h2>
-      <div class="depoimento">
-        <p>"O Clube Premium transformou minha rotina. A melhor assinatura que já fiz!"</p>
-        <strong>- João M.</strong>
-      </div>
-      <div class="depoimento">
-        <p>"Assino há 6 meses e estou muito satisfeito com os conteúdos e o suporte."</p>
-        <strong>- Carla T.</strong>
-      </div>
-    </div>
-
-    <div class="faq">
-      <h2>Perguntas Frequentes</h2>
-      <div class="faq-item">
-        <strong>Como funciona a assinatura?</strong>
-        <p>Você escolhe um plano, realiza o pagamento via Kirvano e recebe acesso imediato ao conteúdo.</p>
-      </div>
-      <div class="faq-item">
-        <strong>Posso cancelar a qualquer momento?</strong>
-        <p>Sim! O cancelamento pode ser feito diretamente pelo seu painel da Kirvano.</p>
-      </div>
-    </div>
-
-    <div class="contato">
-      <h2>Contato</h2>
-      <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
     </div>
   </div>
 
