@@ -95,23 +95,26 @@
     button:hover {
       background-color: #333;
     }
-    .links-extra {
-      margin-top: 2rem;
-    }
-    .links-extra a {
-      display: block;
-      margin: 0.5rem 0;
-      color: #111;
-      text-decoration: underline;
-    }
     .shopee-links {
       margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
     }
-    .shopee-links a {
-      display: block;
-      margin: 0.5rem 0;
+    .shopee-item {
+      text-align: center;
+    }
+    .shopee-item img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+    .shopee-item a {
       color: #111;
       text-decoration: underline;
+      display: block;
     }
   </style>
 </head>
@@ -146,17 +149,15 @@
       </div>
     </div>
 
-    <div class="links-extra">
-      <h2>Outros Produtos</h2>
-      <a href="#">Produto Digital 1</a>
-      <a href="#">Produto Digital 2</a>
-      <a href="#">Produto Digital 3</a>
-    </div>
-
     <div class="shopee-links">
-      <h2>Ofertas da Shopee</h2>
-      <a href="https://s.shopee.com.br/10qO91pBxu" target="_blank">Películas e Capinhas</a>
-      <a href="https://s.shopee.com.br/1LTEXiLVN6" target="_blank">Jogos</a>
+      <div class="shopee-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/11379/11379131.png" alt="Capinha de celular">
+        <a href="https://s.shopee.com.br/10qO91pBxu" target="_blank">Películas e Capinhas</a>
+      </div>
+      <div class="shopee-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/10321/10321169.png" alt="Jogos e entretenimento">
+        <a href="https://s.shopee.com.br/1LTEXiLVN6" target="_blank">Jogos</a>
+      </div>
     </div>
 
     <div class="depoimentos">
