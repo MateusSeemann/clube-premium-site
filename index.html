@@ -97,24 +97,20 @@
     }
     .shopee-links {
       margin-top: 3rem;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      align-items: center;
     }
-    .shopee-item {
-      text-align: center;
+    .shopee-links ul {
+      list-style-type: none;
+      padding: 0;
     }
-    .shopee-item img {
-      width: 100%;
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 0.5rem;
+    .shopee-links li {
+      margin-bottom: 1rem;
     }
-    .shopee-item a {
+    .shopee-links a {
       color: #111;
+      text-decoration: none;
+    }
+    .shopee-links a:hover {
       text-decoration: underline;
-      display: block;
     }
   </style>
 </head>
@@ -150,14 +146,11 @@
     </div>
 
     <div class="shopee-links">
-      <div class="shopee-item">
-        <img src="https://images.unsplash.com/photo-1606813909184-051d7ca4c872?w=400" alt="Capinha de celular">
-        <a href="https://s.shopee.com.br/10qO91pBxu" target="_blank">Películas e Capinhas</a>
-      </div>
-      <div class="shopee-item">
-        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b2c64b76?w=400" alt="Controle de videogame">
-        <a href="https://s.shopee.com.br/1LTEXiLVN6" target="_blank">Jogos</a>
-      </div>
+      <h2>Ofertas Shopee</h2>
+      <ul>
+        <li><a href="https://s.shopee.com.br/10qO91pBxu" target="_blank">Películas e Capinhas</a></li>
+        <li><a href="https://s.shopee.com.br/1LTEXiLVN6" target="_blank">Jogos</a></li>
+      </ul>
     </div>
 
     <div class="depoimentos">
